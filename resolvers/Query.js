@@ -1,5 +1,4 @@
 exports.Query = {
-    hello: () => {
-        return "World!!!"
-    },
+    trips: (parent, args, { db }) => db.trips,
+
 }
