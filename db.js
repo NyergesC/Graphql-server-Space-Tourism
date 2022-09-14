@@ -36,3 +36,7 @@ const trips = [
       "id":"4"
     }
   ]
+
+  exports.db = {
+    trips
+}
