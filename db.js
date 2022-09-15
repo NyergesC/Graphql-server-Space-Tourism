@@ -46,7 +46,7 @@ const trips = [
       "author": "Tom Shelley",
       "read": "read more",
       "value": 5,
-      "id": 1
+      "id": "1"
     },
     {
       "title": "Food preparation",
@@ -56,7 +56,7 @@ const trips = [
       "body": "Everyone’s gotta eat! And just like on Earth meal times in space are a time to catch-up and socialize. The ISS galley has an array of food from the different countries that make up the ISS partnership so all tastes can be catered for. However in weightlessness there is no natural convection, meaning food must be heated in a slightly different way, either with hot water or using a forced air convention oven.Recent experiments have successfully grown mixed greens like lettuce and cabbage in space. While these are not yet available for astronauts to eat, they will be in the future.",
       "read": "read more",
       "value": 4,
-      "id": 2
+      "id": "2"
     },
     {
       "title": "A Day in the Life of a Private Astronaut part 1",
@@ -66,7 +66,7 @@ const trips = [
       "author": "Phillip Kovalsky",
       "read": "read more",
       "value": 4,
-      "id": 3
+      "id": "3"
     },
     {
       "title": "Season’s Greetings 2022",
@@ -76,11 +76,25 @@ const trips = [
       "author": "Cori Meyen",
       "read": "read more",
       "value": 5,
-      "id": 4
+      "id": "4"
     },
+  ]
+
+  const tripCategories = [
+      {
+          id:"1",
+          name: "Planets"
+      },
+      {
+          id:"2",
+          name: "Moons"
+      },
+
+
   ]
 
   exports.db = {
     trips,
-    blogs
+    blogs,
+    tripCategories
 }

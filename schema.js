@@ -5,6 +5,9 @@ exports.typeDefs = gql`
     type Query{
         trips: [Trip!]!
         blogs: [Blog!]!
+        blog(id: ID!): Blog
+        tripCategories: [TripCategory!]!
+        tripCategory(id:ID!): TripCategory
     }
 
     type Trip {
@@ -25,6 +28,11 @@ exports.typeDefs = gql`
     author: String!,
     read: String!,
     value: Int!,
+  }
+
+  type TripCategory {
+      id: ID!
+      name: String!
   }
 
 `
