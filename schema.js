@@ -33,6 +33,7 @@ exports.typeDefs = gql`
   type TripCategory {
       id: ID!
       name: String!
+      trips: [Trip!]!
   }
 
 `

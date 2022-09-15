@@ -6,7 +6,8 @@ const trips = [
       "duration": "3 days",
       "src": "moon.png",
       "alt": "Moon",
-      "id": "1"
+      "id": "1",
+      "tripCategoryId":"2"
     },
     {
       "destination": "Mars",
@@ -15,7 +16,8 @@ const trips = [
       "duration": "9 months",
       "src": "mars.png",
       "alt": "Mars",
-      "id": "2"
+      "id": "2",
+      "tripCategoryId":"1"
     },
     {
       "destination": "Europa",
@@ -24,7 +26,8 @@ const trips = [
       "duration": "3 years",
       "src": "europa.png",
       "alt": "Europa",
-      "id": "3"
+      "id": "3",
+      "tripCategoryId":"2"
     },
     {
       "destination": "Jupiter",
@@ -33,7 +36,8 @@ const trips = [
       "duration": "4 years",
       "src": "jupiter.png",
       "alt": "Jupiter",
-      "id":"4"
+      "id":"4",
+      "tripCategoryId":"1"
     }
   ]
 
