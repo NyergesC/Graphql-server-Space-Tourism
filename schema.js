@@ -48,6 +48,7 @@ exports.typeDefs = gql`
     name: String!
     email: String!
     age:Int!
+    review: Review
 
   }
     type Review {
