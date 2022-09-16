@@ -1,6 +1,10 @@
 exports.Query = {
     trips: (parent, args, { db }) => db.trips,
 
+    trip: (parent, {id}, { db }) => {
+        return db.trips.find((trip) => trip.id === id);
+    },
+
     blogs: (parent, args, { db }) => db.blogs,
 
     blog: (parent, {id}, { db }) => {

@@ -4,6 +4,7 @@ const { gql } = require('apollo-server');
 exports.typeDefs = gql`
     type Query{
         trips: [Trip!]!
+        trip(id:ID!): Trip
         blogs: [Blog!]!
         blog(id: ID!): Blog
         tripCategories: [TripCategory!]!
@@ -18,6 +19,7 @@ exports.typeDefs = gql`
     duration: String!,
     src: String!,
     alt: String!,
+    tripCategory: TripCategory
   }
     type Blog {
     id: ID!,
