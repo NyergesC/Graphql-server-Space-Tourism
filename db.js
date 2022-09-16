@@ -97,8 +97,61 @@ const trips = [
 
   ]
 
+  const users = [
+    {
+      "id": "1",
+      "name": "Tom Shelley",
+      "email": "tom.shelley@gmail.com",
+      "age": 25,
+    },
+    {
+      "id": "2",
+      "name": "Elizabeth Smith",
+      "email": "elizabeth.smith@gmail.com",
+      "age": 32,
+   },
+    {
+      "id": "3",
+      "name": "Phillip Kovalsky",
+      "email": "phillip.kovalsky@gmail.com",
+      "age": 35,
+    },
+    {
+      "id": "4",
+      "name": "Cori Meyen",
+      "email": "cory.meyeny@gmail.com",
+      "age": 45,
+    }
+  ];
+
+  const reviews = [
+    {
+      "id": "1",
+      "title": "Absolute the best!",
+      "text": "It was the best experience ever in my life! Don't miss it!",
+    },
+    {
+      "id": "2",
+      "title": "Totally average",
+      "text": "I expected something more, good but nothing special.",
+    },
+    {
+      "id": "3",
+      "title": "Deffinetly Yes!",
+      "text": "Biggest adventure I have ever had! I felt 100% safe, not boring at all!",
+    },
+    {
+      "id": "4",
+      "title": "Worth its price",
+      "text": "Expensive but you will never forget!",
+    }
+  ];
+
+
   exports.db = {
     trips,
     blogs,
-    tripCategories
+    tripCategories, 
+    users,
+    reviews
 }

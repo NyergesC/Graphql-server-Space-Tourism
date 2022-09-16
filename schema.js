@@ -9,6 +9,10 @@ exports.typeDefs = gql`
         blog(id: ID!): Blog
         tripCategories: [TripCategory!]!
         tripCategory(id:ID!): TripCategory
+        users: [User!]!
+        user(id: ID!): User
+        reviews: [Review!]!
+        review(id: ID!): Review
     }
 
     type Trip {
@@ -32,10 +36,24 @@ exports.typeDefs = gql`
     value: Int!,
   }
 
-  type TripCategory {
+    type TripCategory {
       id: ID!
       name: String!
       trips: [Trip!]!
+  }
+
+    type User {
+    id: ID!
+    name: String!
+    email: String!
+    age:Int!
+
+  }
+    type Review {
+    id: ID!
+    title: String!
+    text:String!
+
   }
 
 `
