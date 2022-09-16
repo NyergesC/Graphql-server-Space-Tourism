@@ -23,7 +23,10 @@ exports.Query = {
         return db.users.find((user) => user.id === id);
     },
 
-    reviews: (parent, args, { db }) => db.reviews,
+    reviews: (parent, {filter}, { db }) => {        
+        return filter ?
+        db.reviews.filter(review => review.rating === filter.rating) : db.reviews
+    },
 
     review: (parent, {id}, { db }) => {
         return db.reviews.find((review) => review.id === id);

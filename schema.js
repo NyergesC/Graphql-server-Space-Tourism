@@ -11,7 +11,7 @@ exports.typeDefs = gql`
         tripCategory(id:ID!): TripCategory
         users: [User!]!
         user(id: ID!): User
-        reviews: [Review!]!
+        reviews(filter: ReviewsFilterInput): [Review!]!
         review(id: ID!): Review
     }
 
@@ -57,6 +57,10 @@ exports.typeDefs = gql`
     comment: String!
     text:String!
     rating: Int!
+  }
+
+  input ReviewsFilterInput {
+      rating:Int
   }
 
 `
