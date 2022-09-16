@@ -24,6 +24,7 @@ exports.typeDefs = gql`
     src: String!,
     alt: String!,
     tripCategory: TripCategory
+    reviews:[Review!]!
   }
     type Blog {
     id: ID!,
@@ -51,9 +52,10 @@ exports.typeDefs = gql`
   }
     type Review {
     id: ID!
-    title: String!
+    date:String!
+    comment: String!
     text:String!
-
+    rating: Int!
   }
 
 `

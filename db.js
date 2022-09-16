@@ -127,23 +127,35 @@ const trips = [
   const reviews = [
     {
       "id": "1",
+      "date":"2021-12-01",
       "title": "Absolute the best!",
-      "text": "It was the best experience ever in my life! Don't miss it!",
+      "comment": "It was the best experience ever in my life! Don't miss it!",
+      "rating":5,
+      "tripId":"1"
     },
     {
       "id": "2",
+      "date":"2021-12-21",
       "title": "Totally average",
-      "text": "I expected something more, good but nothing special.",
+      "comment": "I expected something more, good but nothing special.",
+      "rating":3,
+      "tripId":"2"
     },
     {
       "id": "3",
+      "date":"2022-02-11",
       "title": "Deffinetly Yes!",
-      "text": "Biggest adventure I have ever had! I felt 100% safe, not boring at all!",
+      "comment": "Biggest adventure I have ever had! I felt 100% safe, not boring at all!",
+      "rating":5,
+      "tripId":"3"
     },
     {
       "id": "4",
+      "date":"2022-06-05",
       "title": "Worth its price",
-      "text": "Expensive but you will never forget!",
+      "comment": "Expensive but you will never forget!",
+      "rating":4,
+      "tripId":"4",
     }
   ];
 
