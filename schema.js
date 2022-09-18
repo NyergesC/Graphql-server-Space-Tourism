@@ -15,6 +15,10 @@ exports.typeDefs = gql`
         review(id: ID!): Review
     }
 
+    type Mutation {
+        addBlog(input: AddBlogInput!): Blog!
+    }
+
     type Trip {
     id: ID!,
     destination: String!,
@@ -64,6 +68,14 @@ exports.typeDefs = gql`
 
   input ReviewsFilterInput {
       rating:Int
+  }
+
+  input AddBlogInput {
+      title:String!
+      date: String!,
+      body: String!,
+      author: String!,
+
   }
 
 `

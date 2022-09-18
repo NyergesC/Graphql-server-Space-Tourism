@@ -6,6 +6,7 @@ const { Trip } = require("./resolvers/Trip");
 const { User } = require("./resolvers/User");
 const { Blog } = require("./resolvers/Blog");
 const { TripCategory } = require("./resolvers/TripCategory")
+const { Mutation } = require('./resolvers/Mutation')
 const { db } = require("./db");
 
 
@@ -14,11 +15,12 @@ const server = new ApolloServer({
     typeDefs,
     resolvers:{
         Query,
+        Mutation,
         TripCategory,
         Trip, 
         User,
         Review, 
-        Blog
+        Blog,
     },
 
     context: {
