@@ -17,7 +17,7 @@ exports.Query = {
         return db.tripCategories.find((tripCategory) => tripCategory.id === id)
     },
 
-    users: (parent, args, { db }) => db.users,
+    users: (parent, args, { db }) =>  db.users,
 
     user: (parent, {id}, { db }) => {
         return db.users.find((user) => user.id === id);
@@ -31,7 +31,5 @@ exports.Query = {
     review: (parent, {id}, { db }) => {
         return db.reviews.find((review) => review.id === id);
     },
-
-
 
 }

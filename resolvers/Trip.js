@@ -6,5 +6,6 @@ exports.Trip = {
     reviews: ({id}, args, { db }) => {
         return db.reviews.filter(review => review.tripId === id )
     }
-    
+
+   
 }

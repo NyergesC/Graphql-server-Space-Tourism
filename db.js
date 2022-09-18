@@ -50,7 +50,8 @@ const trips = [
       "author": "Tom Shelley",
       "read": "read more",
       "value": 5,
-      "id": "1"
+      "id": "1",
+      "userId":"1"
     },
     {
       "title": "Food preparation",
@@ -60,7 +61,8 @@ const trips = [
       "body": "Everyone’s gotta eat! And just like on Earth meal times in space are a time to catch-up and socialize. The ISS galley has an array of food from the different countries that make up the ISS partnership so all tastes can be catered for. However in weightlessness there is no natural convection, meaning food must be heated in a slightly different way, either with hot water or using a forced air convention oven.Recent experiments have successfully grown mixed greens like lettuce and cabbage in space. While these are not yet available for astronauts to eat, they will be in the future.",
       "read": "read more",
       "value": 4,
-      "id": "2"
+      "id": "2",
+      "userId":"2"
     },
     {
       "title": "A Day in the Life of a Private Astronaut part 1",
@@ -70,7 +72,8 @@ const trips = [
       "author": "Phillip Kovalsky",
       "read": "read more",
       "value": 4,
-      "id": "3"
+      "id": "3",
+      "userId":"3"
     },
     {
       "title": "Season’s Greetings 2022",
@@ -80,7 +83,8 @@ const trips = [
       "author": "Cori Meyen",
       "read": "read more",
       "value": 5,
-      "id": "4"
+      "id": "4",
+      "userId":"4"
     },
   ]
 
@@ -103,28 +107,32 @@ const trips = [
       "name": "Tom Shelley",
       "email": "tom.shelley@gmail.com",
       "age": 25,
-      "reviewId":"1"
+      "reviewId":"1",
+      "blogId":"1"
     },
     {
       "id": "2",
       "name": "Elizabeth Smith",
       "email": "elizabeth.smith@gmail.com",
       "age": 32,
-      "reviewId":"2"
+      "reviewId":"2",
+      "blogId":"2"
    },
     {
       "id": "3",
       "name": "Phillip Kovalsky",
       "email": "phillip.kovalsky@gmail.com",
       "age": 35,
-      "reviewId":"3"
+      "reviewId":"3",
+      "blogId":"3"
     },
     {
       "id": "4",
       "name": "Cori Meyen",
       "email": "cory.meyeny@gmail.com",
       "age": 45,
-      "reviewId":"4"
+      "reviewId":"4",
+      "blogId":"4"
     }
   ];
 
@@ -135,7 +143,8 @@ const trips = [
       "title": "Absolute the best!",
       "comment": "It was the best experience ever in my life! Don't miss it!",
       "rating":5,
-      "tripId":"1"
+      "tripId":"1",
+      "userId":"1"
     },
     {
       "id": "2",
@@ -143,7 +152,8 @@ const trips = [
       "title": "Totally average",
       "comment": "I expected something more, good but nothing special.",
       "rating":3,
-      "tripId":"2"
+      "tripId":"2",
+      "userId":"2"
     },
     {
       "id": "3",
@@ -151,7 +161,8 @@ const trips = [
       "title": "Deffinetly Yes!",
       "comment": "Biggest adventure I have ever had! I felt 100% safe, not boring at all!",
       "rating":5,
-      "tripId":"3"
+      "tripId":"3",
+      "userId":"3"
     },
     {
       "id": "4",
@@ -160,6 +171,7 @@ const trips = [
       "comment": "Expensive but you will never forget!",
       "rating":4,
       "tripId":"4",
+      "userId":"4"
     }
   ];
 

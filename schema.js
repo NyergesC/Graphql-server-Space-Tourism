@@ -35,6 +35,7 @@ exports.typeDefs = gql`
     author: String!,
     read: String!,
     value: Int!,
+    user: User
   }
 
     type TripCategory {
@@ -49,6 +50,7 @@ exports.typeDefs = gql`
     email: String!
     age:Int!
     review: Review
+    blog: Blog
 
   }
     type Review {
@@ -57,6 +59,7 @@ exports.typeDefs = gql`
     comment: String!
     text:String!
     rating: Int!
+    user: User
   }
 
   input ReviewsFilterInput {

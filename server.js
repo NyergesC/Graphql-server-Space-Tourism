@@ -1,8 +1,10 @@
 const { ApolloServer } = require("apollo-server");
 const { typeDefs } = require("./schema");
 const { Query } = require("./resolvers/Query");
+const { Review } = require("./resolvers/Review");
 const { Trip } = require("./resolvers/Trip");
 const { User } = require("./resolvers/User");
+const { Blog } = require("./resolvers/Blog");
 const { TripCategory } = require("./resolvers/TripCategory")
 const { db } = require("./db");
 
@@ -14,7 +16,9 @@ const server = new ApolloServer({
         Query,
         TripCategory,
         Trip, 
-        User
+        User,
+        Review, 
+        Blog
     },
 
     context: {
