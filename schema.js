@@ -18,6 +18,7 @@ exports.typeDefs = gql`
     type Mutation {
         addBlog(input: AddBlogInput!): Blog!
         addReview(input: AddReviewInput!): Review!
+        deleteBlog(id: ID!): Boolean!
     }
 
     type Trip {

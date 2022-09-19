@@ -35,4 +35,9 @@ exports.Mutation = {
     
         return newReview;
       },
+
+    deleteBlog: (parent, { id }, { db }) => {
+      db.blogs = db.blogs.filter(blog => blog.id !== id);
+      return true
+    }
 }
