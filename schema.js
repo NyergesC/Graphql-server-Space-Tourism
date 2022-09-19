@@ -75,6 +75,7 @@ exports.typeDefs = gql`
       date: String!,
       body: String!,
       author: String!,
+      userId:String!
 
   }
 

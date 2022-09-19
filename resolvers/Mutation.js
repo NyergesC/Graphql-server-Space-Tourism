@@ -2,7 +2,7 @@ const { v4: uuid } = require("uuid")
 
 exports.Mutation = {
     addBlog: (parent, { input }, { db }) => {
-        const { title, date, body, author } = input;
+        const { title, date, body, author, userId } = input;
     
         const newBlog = {
           id: uuid(),
@@ -10,6 +10,7 @@ exports.Mutation = {
           date,
           body,
           author,
+          userId
         };
     
         db.blogs.push(newBlog);
