@@ -45,7 +45,7 @@ exports.Mutation = {
 
     updateBlog:(parent, { id, input }, { db }) => {
       const index = db.blogs.findIndex(blog => blog.id === id);
-
+      if(index === -1) return null
       db.blogs[index] = {
         ...db.blogs[index],
         ...input
