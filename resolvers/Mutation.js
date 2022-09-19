@@ -37,7 +37,29 @@ exports.Mutation = {
       },
 
     deleteBlog: (parent, { id }, { db }) => {
-      db.blogs = db.blogs.filter(blog => blog.id !== id);
+      db.blogs = db.blogs.filter(blog => blog.id !== id)
+      
       return true
+
+    },
+
+    updateBlog:(parent, { id, input }, { db }) => {
+      const index = db.blogs.findIndex(blog => blog.id === id);
+
+      db.blogs[index] = {
+        ...db.blogs[index],
+        ...input
+      };
+      return db.blogs[index]
     }
-}
+};
+
+/* db.users = db.users.map(user => {
+  if(user.blogId === id) return {
+    ...user,
+    blogId: null,
+  };
+  else return user;
+});
+
+return true */

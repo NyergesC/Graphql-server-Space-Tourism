@@ -19,6 +19,7 @@ exports.typeDefs = gql`
         addBlog(input: AddBlogInput!): Blog!
         addReview(input: AddReviewInput!): Review!
         deleteBlog(id: ID!): Boolean!
+        updateBlog(id:ID!, input:UpdateBlogInput!): Blog!
     }
 
     type Trip {
@@ -56,7 +57,7 @@ exports.typeDefs = gql`
     email: String!
     age:Int!
     review: Review
-    blog: Blog
+    blog:Blog
 
   }
     type Review {
@@ -78,6 +79,14 @@ exports.typeDefs = gql`
       body: String!,
       author: String!,
       userId:String!
+
+  }
+
+  input UpdateBlogInput {
+      title:String!
+      date: String!,
+      body: String!,
+      author: String!,
 
   }
   input AddReviewInput {
