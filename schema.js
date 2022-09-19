@@ -17,6 +17,7 @@ exports.typeDefs = gql`
 
     type Mutation {
         addBlog(input: AddBlogInput!): Blog!
+        addReview(input: AddReviewInput!): Review!
     }
 
     type Trip {
@@ -76,6 +77,15 @@ exports.typeDefs = gql`
       body: String!,
       author: String!,
       userId:String!
+
+  }
+  input AddReviewInput {
+      date:String!
+      comment: String!,
+      text: String!,
+      rating:Int!
+      tripId: String!
+      userId: String!
 
   }
 

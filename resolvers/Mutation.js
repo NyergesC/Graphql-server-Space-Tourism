@@ -17,4 +17,22 @@ exports.Mutation = {
     
         return newBlog;
       },
+
+    addReview: (parent, { input }, { db }) => {
+        const { date, comment, text, rating, tripId, userId} = input;
+    
+        const newReview = {
+          id: uuid(),
+          date,
+          comment,
+          text,
+          rating,
+          tripId,
+          userId
+        };
+    
+        db.reviews.push(newReview);
+    
+        return newReview;
+      },
 }
